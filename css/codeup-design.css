@@ -6,16 +6,39 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #e6e6e6;
+    font-family: 'Abel', sans-serif;
 }
-.navbar {
-
+h1, h2, h3, h4, h5{
+    font-family: 'Anton', sans-serif;
 }
-#logo{
+.row .codeup {
+    font-family: 'Abel', sans-serif;
+    font-size: 2.6rem;
+}
+.logo{
     height: 105px;
     width: 105px;
-
+    margin: 0 auto;
+    position: relative;
+    bottom: 15px;
 }
 .row {
     width: 100%;
 }
+.services-contact {
+    padding: 4px;
+}
+.visual-design {
+    font-size: 2.7rem;
+}
 
+a {
+    text-decoration: none;
+    color:black
+}
+.row #circles {
+    border-radius: 50%;
+
+
+
+}
