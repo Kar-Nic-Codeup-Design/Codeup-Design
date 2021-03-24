@@ -9,51 +9,114 @@ body{
     background-color: #e6e6e6;
     font-family: 'Abel', sans-serif;
 }
+
 h1, h2, h3, h4, h5{
     font-family: 'Anton', sans-serif;
 }
-.row .codeup {
+
+.codeup {
     font-family: 'Abel', sans-serif;
     font-size: 2.6rem;
 }
+
+#selectedWork {
+    font-family: 'Abel', sans-serif;
+}
+
 div .row>.logo {
     background-color: #e6e6e6;
-
 }
+
 #logo{
     height: 105px;
     width: 105px;
     margin: 0 auto;
     position: relative;
     bottom: 15px;
-
 }
+
+.nav-link {
+    padding: 0 10px;
+}
+
 .row {
     width: 100%;
 }
 
-
-.visual-design {
-    font-size: 2.7rem;
-}
 .circles {
     align-content: center;
     justify-content: center;
 }
+
 .circles .btn {
     flex-wrap: wrap;
     height: 111px;
     width: 111px;
     border-radius: 50%;
     border: 6px solid white;
+}
 
+#circles {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 a {
     text-decoration: none;
     color:black
 }
+
 .row #circles {
     border-radius: 50%;
 }
 
+#designButton {
+    background: #E6563B;
+    margin-bottom: 10px;
+}
+
+#developButton {
+    background: #dea03d;
+}
+
+#supportButton {
+    background: #7cb06c;
+}
+
+#hostButton {
+    background: #00aba9;
+}
+
+#appleIpadBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#appleIpad {
+    height: 140px;
+    width: 240px;
+    border: 6px solid #f0f0f0;
+}
+
+#badge1 {
+    margin-left: 36px;
+    background: #E6563B;
+}
+
+#badge2 {
+    background: #dea03d;
+}
+
+#badge3 {
+    background: #7cb06c;
+}
+
+#badge4 {
+    background: #00aba9;
+}
+
+.badge {
+    border-radius: 50%;
+}
