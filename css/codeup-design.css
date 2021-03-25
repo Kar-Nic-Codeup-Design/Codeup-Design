@@ -19,6 +19,20 @@ h1, h2, h3, h4, h5{
     font-size: 2.6rem;
 }
 
+div .statement {
+
+    font-size: 3.5rem;
+}
+/*div .visual-design {*/
+/*    width: 330px;*/
+
+
+/*}*/
+
+h1 #visual-design {
+    font-size: 3rem;
+}
+
 #selectedWork {
     font-family: 'Abel', sans-serif;
 }
