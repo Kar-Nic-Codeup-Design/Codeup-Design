@@ -3,70 +3,65 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Codeup Design</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
     <!--    Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!--    Custom CSS below -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/codeup-design.css">
 </head>
-
 <body>
-    <header>
-        <nav class="navbar py-4 px-0 d-flex flex-column justify-content-center">
-
-            <div class="jumbotron-fluid"></div>
-            <div class="row bg-light mt-2" style="height: 75px">
-                <img src="img/logo.png" class="logo mb-3" id="logo" alt="logo">
+<header>
+    <nav>
+        <div class="navSection">
+            <div class="white-strip mt-5 mb-4">
+                <img src="img/logo.png" alt="logo" id="logo">
             </div>
-            <div class="row mt-3 justify-content-center">
-                <h1 class="codeup">codeup design</h1>
-            </div>
-
-    <!--            navbar list                 -->
-            <div class="row justify-content-center mt-3">
-                <ul class="nav text-uppercase">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-<!--        changed file-->
-    </header>
-
-    <main>
-        <h1 class="visual-design text-uppercase text-center mt-3 mb-6">Visual Design & Web Development</h1>
-        <h4 class="city text-uppercase text-center mt-5 mb-4">From Park City, Utah</h4>
-
-
-        <div class="row button circles d-flex text-center mx-0" id="circles" style= "height: 250px">
-            <button type="button" class="btn btn-primary bg-#E6563B btn-lg text-uppercase font-weight-bold" id="designButton">Design</button>
-            <button type="button" class="btn btn-secondary btn-lg text-uppercase font-weight-bold" id="developButton">Develop</button>
-            <button type="button" class="btn btn-primary btn-lg text-uppercase font-weight-bold" id="supportButton">Support</button>
-            <button type="button" class="btn btn-secondary btn-lg text-uppercase font-weight-bold" id="hostButton">Host</button>
         </div>
 
-        <h6 id="selectedWork" class="text-center text-uppercase mt-5 mb-4"> Selected Work </h6>
+        <h1 class="codeupdesign mt-4">codeup design</h1>
 
-        <div id="appleIpadBox">
-            <img src="img/images/apple-ipad.jpg" alt="apple-ipad" id="appleIpad">
-            <h6 class="text-uppercase mt-2"> Featured Project <span id="badge1" class="badge rounded-pill">D</span> <span id="badge2" class="ml badge rounded-pill">D</span> <span id="badge3" class="ml badge rounded-pill">S</span> <span id="badge4" class="ml badge rounded-pill">H</span></h6>
+        <div>
+            <ul class="nav text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
+    </nav>
+</header>
+<main>
 
-    </main>
+    <h1 class="container visual-design text-uppercase mt-3 mb-4">Visual Design & Web Development</h1>
 
+    <h4 class="city text-uppercase mt-5 mb-4">From Park City, Utah</h4>
+
+    <div class="circles text-center mt-5">
+        <button type="button" class="btn btn-lg text-uppercase" id="designButton">Design</button>
+        <button type="button" class="btn btn-lg text-uppercase" id="developButton">Develop</button>
+        <button type="button" class="btn btn-lg text-uppercase" id="supportButton">Support</button>
+        <button type="button" class="btn btn-lg text-uppercase" id="hostButton">Host</button>
+    </div>
+
+    <h6 id="selectedWork" class="text-center text-uppercase mt-5 mb-4"> Selected Work </h6>
+
+    <div id="appleIpadBox">
+        <img src="img/apple-ipad.jpg" alt="apple-ipad" id="appleIpad">
+        <h6 class="text-uppercase mt-2"> Featured Project <span id="badge1" class="badge rounded-pill">D</span> <span id="badge2" class="badge rounded-pill">D</span> <span id="badge3" class="badge rounded-pill">S</span> <span id="badge4" class="badge rounded-pill">H</span></h6>
+    </div>
+
+</main>
 
 <!-- Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
