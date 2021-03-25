@@ -1,93 +1,117 @@
-*{
-    box-sizing: border-box;
+
+/* --------------- Start: X-Small Devices --------------- */
+
+
+body {
+    background: #F0F0F0;
+    height: 100vh;
+    width: 100vw;
+    /*background: #F0F0F0;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*font-family: 'Abel', sans-serif;*/
+    /*font-family: 'Anton', sans-serif;*/
 }
 
-body{
-    display: flex;
-    margin: 1rem;
-    flex-direction: column;
-    background-color: #e6e6e6;
-    font-family: 'Abel', sans-serif;
-}
+/* --- Everything within the Nav --- */
 
-h1, h2, h3, h4, h5{
-    font-family: 'Anton', sans-serif;
-}
-
-.codeup {
-    font-family: 'Abel', sans-serif;
-    font-size: 2.6rem;
-}
-
-#selectedWork {
-    font-family: 'Abel', sans-serif;
-}
-
-div .row>.logo {
-    background-color: #e6e6e6;
-}
-
-#logo{
-    height: 105px;
-    width: 105px;
-    margin: 0 auto;
-    position: relative;
-    bottom: 15px;
-}
-
-.nav-link {
-    padding: 0 10px;
-}
-
-.row {
+.navSection {
+    height: 100%;
     width: 100%;
-}
-
-.circles {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-.circles .btn {
-    flex-wrap: wrap;
-    height: 111px;
-    width: 111px;
-    border-radius: 50%;
-    border: 6px solid white;
-}
-
-#circles {
+.white-strip {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 98px;
+    width: 100%;
 }
 
-a {
-    text-decoration: none;
-    color:black
+#logo {
+    height: 200px;
+    width: 200px;
 }
 
-.row #circles {
+h1.codeupdesign {
+    font-family: 'Abel', sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+ul.nav {
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap;
+}
+
+nav a.nav-link {
+    color: black;
+    font-family: 'Abel', sans-serif;
+    font-size: 21px;
+    padding: 10px;
+}
+
+nav a.nav-link:hover {
+    color: blue;
+}
+
+/* --- Everything within the Main --- */
+
+h1.visual-design {
+    font-family: 'Anton', sans-serif;
+    font-size: 3.8em;
+    text-align: center;
+    padding: 5px;
+}
+
+h4.city {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.circles .btn {
+    height: 175px;
+    width: 175px;
     border-radius: 50%;
+    border: 10px solid white;
+    margin: 5px 10px;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
 }
 
 #designButton {
     background: #E6563B;
-    margin-bottom: 10px;
+    color: white;
 }
 
 #developButton {
     background: #dea03d;
+    color: white;
 }
 
 #supportButton {
     background: #7cb06c;
+    color: white;
 }
 
 #hostButton {
     background: #00aba9;
+    color: white;
+}
+
+#selectedWork {
+    font-family: 'Abel', sans-serif;
+    font-size: 21px;
 }
 
 #appleIpadBox {
+    font-family: 'Abel', sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -95,18 +119,22 @@ a {
 }
 
 #appleIpad {
-    height: 140px;
-    width: 240px;
-    border: 6px solid #f0f0f0;
+    height: 200px;
+    width: 330px;
+    border: 10px solid #F0F0F0;
+}
+
+h6 {
+    font-size: 21px;
 }
 
 #badge1 {
-    margin-left: 36px;
+    margin-left: 50px;
     background: #E6563B;
 }
 
 #badge2 {
-    background: #dea03d;
+    background: #eb9d3a;
 }
 
 #badge3 {
@@ -120,3 +148,4 @@ a {
 .badge {
     border-radius: 50%;
 }
+/* --------------- End: X-Small Devices --------------- */
