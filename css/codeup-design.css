@@ -19,18 +19,20 @@ h1, h2, h3, h4, h5{
     font-size: 2.6rem;
 }
 
-div .statement {
+/*div .statement {*/
 
-    font-size: 3.5rem;
-}
+/*    font-size: 3.5rem;*/
+/*}*/
 /*div .visual-design {*/
 /*    width: 330px;*/
 
 
 /*}*/
 
-h1 #visual-design {
+.visualDesign #visual-design {
     font-size: 3rem;
+    margin: 1em 3em 0 3em;
+    font-family: 'Anton', sans-serif;
 }
 
 #selectedWork {
@@ -60,10 +62,11 @@ div .row>.logo {
 .circles {
     align-content: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .circles .btn {
-    flex-wrap: wrap;
+
     height: 111px;
     width: 111px;
     border-radius: 50%;
@@ -86,11 +89,10 @@ a {
 
 #designButton {
     background: #E6563B;
-    margin-bottom: 10px;
 }
 
 #developButton {
-    background: #dea03d;
+    background: #EB9D3A;
 }
 
 #supportButton {
