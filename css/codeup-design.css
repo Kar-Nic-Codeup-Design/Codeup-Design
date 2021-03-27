@@ -4,7 +4,6 @@
 
 body{
     display: flex;
-    /*margin: 1rem;*/
     flex-direction: column;
     background-color: #e6e6e6;
     font-family: 'Abel', sans-serif;
@@ -18,16 +17,6 @@ h1, h2, h3, h4, h5{
     font-family: 'Abel', sans-serif;
     font-size: 2.6rem;
 }
-
-/*div .statement {*/
-
-/*    font-size: 3.5rem;*/
-/*}*/
-/*div .visual-design {*/
-/*    width: 330px;*/
-
-
-/*}*/
 
 #visual-design {
     font-size: 2.2rem;
@@ -73,19 +62,10 @@ div .row>.logo {
     border: 6px solid white;
 }
 
-/*#circles {*/
-/*    display: flex;*/
-/*    justify-content: space-evenly;*/
-/*}*/
-
 a {
     text-decoration: none;
     color:black
 }
-
-/*.row #circles {*/
-/*    border-radius: 50%;*/
-/*}*/
 
 #designButton {
     background: #E6563B;
@@ -135,4 +115,27 @@ a {
 
 .badge {
     border-radius: 50%;
+}
+
+.sm {
+    display: none;
+}
+
+      /*"small view"*/
+
+@media screen and (min-width:480px) and (max-width:768px){
+
+    /*.xs will show again after 768 at which point the utility below will be copied to the proceeding @media queries*/
+    .xs .nav {
+        display: none;
+    }
+
+    .sm {
+        display: flex;
+    }
+
+
+
+
+
 }
