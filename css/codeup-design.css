@@ -29,8 +29,8 @@ h1, h2, h3, h4, h5{
 
 /*}*/
 
-.visualDesign #visual-design {
-    font-size: 3rem;
+#visual-design {
+    font-size: 2.2rem;
     margin: 1em 3em 0 3em;
     font-family: 'Anton', sans-serif;
 }
@@ -43,7 +43,7 @@ div .row>.logo {
     background-color: #e6e6e6;
 }
 
-#logo{
+.logo{
     height: 105px;
     width: 105px;
     margin: 0 auto;
@@ -73,19 +73,19 @@ div .row>.logo {
     border: 6px solid white;
 }
 
-#circles {
-    display: flex;
-    justify-content: space-evenly;
-}
+/*#circles {*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*}*/
 
 a {
     text-decoration: none;
     color:black
 }
 
-.row #circles {
-    border-radius: 50%;
-}
+/*.row #circles {*/
+/*    border-radius: 50%;*/
+/*}*/
 
 #designButton {
     background: #E6563B;
@@ -103,33 +103,33 @@ a {
     background: #00aba9;
 }
 
-#appleIpadBox {
+.selectedWorkImages {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-#appleIpad {
+.imageSize {
     height: 140px;
     width: 240px;
     border: 6px solid #f0f0f0;
 }
 
-#badge1 {
+.badge1 {
     margin-left: 36px;
     background: #E6563B;
 }
 
-#badge2 {
+.badge2 {
     background: #dea03d;
 }
 
-#badge3 {
+.badge3 {
     background: #7cb06c;
 }
 
-#badge4 {
+.badge4 {
     background: #00aba9;
 }
 
