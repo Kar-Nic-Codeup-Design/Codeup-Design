@@ -37,7 +37,7 @@ div .row>.logo {
     width: 105px;
     margin: 0 auto;
     position: relative;
-    bottom: 15px;
+    bottom: 24px;
 }
 
 .nav-link {
@@ -132,6 +132,7 @@ a {
 
     .sm {
         display: flex;
+        position: relative;
     }
 
 
