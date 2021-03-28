@@ -36,17 +36,30 @@ body {
     height: 200px;
     width: 200px;
 }
+#visual-design {
+    font-size: 33px;
+    margin: 1em 3em 0 3em;
+    font-family: 'Anton', sans-serif;
+    /*position: initial;*/
+}
 
-h1.codeupdesign {
+#selectedWork {
     font-family: 'Abel', sans-serif;
     font-size: 3.5em;
     text-align: center;
 }
 
-ul.nav {
-    display: flex;
-    justify-content: center;
-    flex-flow: nowrap;
+.logo{
+    height: 105px;
+    width: 105px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 24px;
+
+}
+
+.nav-link {
+    padding: 0 10px;
 }
 
 nav a.nav-link {
@@ -56,43 +69,32 @@ nav a.nav-link {
     padding: 10px;
 }
 
-nav a.nav-link:hover {
-    color: blue;
-}
 
-/* --- Everything within the Main --- */
-
-h1.visual-design {
-    font-family: 'Anton', sans-serif;
-    font-size: 3.8em;
-    text-align: center;
-    padding: 5px;
-}
-
-h4.city {
-    font-family: 'Anton', sans-serif;
-    font-size: 2.5em;
-    text-align: center;
+.circles {
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .circles .btn {
-    height: 175px;
-    width: 175px;
+
+    height: 111px;
+    width: 111px;
     border-radius: 50%;
-    border: 10px solid white;
-    margin: 5px 10px;
-    font-weight: bold;
-    font-family: 'Anton', sans-serif;
+    border: 6px solid white;
+}
+
+a {
+    text-decoration: none;
+    color:black
 }
 
 #designButton {
     background: #E6563B;
-    color: white;
 }
 
 #developButton {
-    background: #dea03d;
-    color: white;
+    background: #EB9D3A;
 }
 
 #supportButton {
@@ -110,42 +112,97 @@ h4.city {
     font-size: 21px;
 }
 
-#appleIpadBox {
-    font-family: 'Abel', sans-serif;
+.selectedWorkImages {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-#appleIpad {
-    height: 200px;
-    width: 330px;
-    border: 10px solid #F0F0F0;
+.imageSize {
+    height: 140px;
+    width: 240px;
+    border: 6px solid #f0f0f0;
 }
 
-h6 {
-    font-size: 21px;
-}
-
-#badge1 {
-    margin-left: 50px;
+.badge1 {
+    margin-left: 36px;
     background: #E6563B;
 }
 
-#badge2 {
-    background: #eb9d3a;
+.badge2 {
+    background: #dea03d;
 }
 
-#badge3 {
+.badge3 {
     background: #7cb06c;
 }
 
-#badge4 {
+.badge4 {
     background: #00aba9;
 }
 
 .badge {
     border-radius: 50%;
 }
-/* --------------- End: X-Small Devices --------------- */
+
+.sm {
+    display: none;
+}
+
+.selectedWorkImagesOnSm {
+    display: none;
+}
+
+      /*"small view"*/
+
+@media screen and (min-width:480px) and (max-width:768px){
+
+    /*.xs will show again after 768 at which point the utility below will be copied to the proceeding @media queries*/
+    .xs .nav {
+        display: none;
+    }
+
+
+
+    span .codeup {
+        display: none;
+    }
+
+    .row .sm {
+        display: block;
+        position: relative;
+        bottom: 87px;
+    }
+
+    .sm .services {
+        margin-left: 15px;
+        margin-right: 18px;
+
+    }
+
+    .sm .work {
+        margin-right: 9px;
+    }
+
+    .sm .blog {
+        margin-left: 141px;
+        margin-right: 21px;
+    }
+
+    #visual-design {
+        margin: auto;
+    }
+
+    .selectedWorkImagesOnSm {
+        display: block;
+
+    }
+
+    .circles {
+    }
+
+    #designButton {
+
+    }
+}
