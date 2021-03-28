@@ -19,18 +19,16 @@ h1, h2, h3, h4, h5{
 }
 
 #visual-design {
-    font-size: 2.2rem;
+    font-size: 33px;
     margin: 1em 3em 0 3em;
     font-family: 'Anton', sans-serif;
+    /*position: initial;*/
 }
 
 #selectedWork {
     font-family: 'Abel', sans-serif;
 }
 
-div .row>.logo {
-    background-color: #e6e6e6;
-}
 
 .logo{
     height: 105px;
@@ -38,6 +36,7 @@ div .row>.logo {
     margin: 0 auto;
     position: relative;
     bottom: 24px;
+
 }
 
 .nav-link {
@@ -121,6 +120,10 @@ a {
     display: none;
 }
 
+.selectedWorkImagesOnSm {
+    display: none;
+}
+
       /*"small view"*/
 
 @media screen and (min-width:480px) and (max-width:768px){
@@ -130,10 +133,51 @@ a {
         display: none;
     }
 
-    .sm {
-        display: flex;
-        position: relative;
+
+
+    span .codeup {
+        display: none;
     }
+
+    .row .sm {
+        display: block;
+        position: relative;
+        bottom: 87px;
+    }
+
+    .sm .services {
+        margin-left: 15px;
+        margin-right: 18px;
+
+    }
+
+    .sm .work {
+        margin-right: 9px;
+    }
+
+    .sm .blog {
+        margin-left: 141px;
+        margin-right: 21px;
+    }
+
+    #visual-design {
+        margin: auto;
+    }
+
+    .selectedWorkImagesOnSm {
+        display: block;
+
+    }
+
+    .circles {
+        margin: auto;
+    }
+
+
+
+
+
+
 
 
 
