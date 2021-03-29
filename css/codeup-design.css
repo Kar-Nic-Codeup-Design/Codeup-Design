@@ -22,7 +22,6 @@ h1, h2, h3, h4, h5{
     font-size: 33px;
     margin: 1em 3em 0 3em;
     font-family: 'Anton', sans-serif;
-    /*position: initial;*/
 }
 
 #selectedWork {
@@ -169,12 +168,15 @@ a {
 
     }
 
-    .circles {
+    .circles .xs {
+        display: none;
     }
 
-    #designButton {
-
+    .circles .sm {
+        display: block;
     }
+
+
 
 
 
