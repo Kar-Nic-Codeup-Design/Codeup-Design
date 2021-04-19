@@ -19,8 +19,8 @@ h1, h2, h3, h4, h5{
 }
 
 #visual-design {
-    font-size: 33px;
-    margin: 1em 3em 0 3em;
+    font-size: 40px;
+    margin: 1em 2em 0 2em;
     font-family: 'Anton', sans-serif;
 }
 
@@ -28,14 +28,12 @@ h1, h2, h3, h4, h5{
     font-family: 'Abel', sans-serif;
 }
 
-
 .logo{
     height: 105px;
     width: 105px;
     margin: 0 auto;
     position: relative;
     bottom: 24px;
-
 }
 
 .nav-link {
@@ -60,6 +58,11 @@ h1, h2, h3, h4, h5{
     border: 6px solid white;
 }
 
+.circles .xs {
+    flex-wrap: wrap;
+    /*position: relative;*/
+}
+
 a {
     text-decoration: none;
     color:black
@@ -67,18 +70,22 @@ a {
 
 #designButton {
     background: #E6563B;
+    margin-left: 1rem;
 }
 
 #developButton {
     background: #EB9D3A;
+    /*margin: 2.1rem;*/
 }
 
 #supportButton {
     background: #7cb06c;
+    margin-left: 1rem;
 }
 
 #hostButton {
     background: #00aba9;
+    /*margin: 1rem;*/
 }
 
 .selectedWorkImages {
@@ -132,12 +139,6 @@ a {
         display: none;
     }
 
-
-
-    span .codeup {
-        display: none;
-    }
-
     .row .sm {
         display: block;
         position: relative;
@@ -165,16 +166,11 @@ a {
 
     .selectedWorkImagesOnSm {
         display: block;
+        text-align: center;
 
     }
 
-    .circles .xs {
-        display: none;
-    }
 
-    .circles .sm {
-        display: block;
-    }
 
 
 
