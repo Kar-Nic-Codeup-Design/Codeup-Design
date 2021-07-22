@@ -22,7 +22,9 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-
+.row.bg-light{
+    width: 100%;
+}
 .white-strip {
     display: flex;
     justify-content: center;
@@ -36,11 +38,18 @@ body {
     height: 200px;
     width: 200px;
 }
+.visualDesign {
+    width: 100%;
+
+}
 #visual-design {
-    font-size: 33px;
-    margin: 1em 3em 0 3em;
+    font-size: 48px;
+    margin: 3rem;
     font-family: 'Anton', sans-serif;
     /*position: initial;*/
+}
+.city{
+    font-family: 'Anton', sans-serif;
 }
 
 #selectedWork {
@@ -89,20 +98,20 @@ a {
     color:black
 }
 
-#designButton {
+#designButton, #designButton-xs {
     background: #E6563B;
 }
 
-#developButton {
+#developButton, #developButton-xs {
     background: #EB9D3A;
 }
 
-#supportButton {
+#supportButton, #supportButton-xs {
     background: #7cb06c;
     color: white;
 }
 
-#hostButton {
+#hostButton, #hostButton-xs {
     background: #00aba9;
     color: white;
 }
@@ -156,14 +165,13 @@ a {
 
       /*"small view"*/
 
-@media screen and (min-width:480px) and (max-width:768px){
+@media screen and (min-width:480px) and (max-width:575px){
 
     /*.xs will show again after 768 at which point the utility below will be copied to the proceeding @media queries*/
-    .xs .nav {
+
+    .sm-nav-links {
         display: none;
     }
-
-
 
     span .codeup {
         display: none;
@@ -204,5 +212,34 @@ a {
 
     #designButton {
 
+    }
+}
+
+/* small view */
+@media screen and (min-width:576px) and (max-width:767px){
+    .xs-nav-links {
+        display: none;
+    }
+
+}
+
+/* medium view */
+@media screen and (min-width:768px) and (max-width:991px){
+    .xs-nav-links {
+        display: none;
+    }
+}
+
+/* large view */
+@media screen and (min-width:992px) and (max-width:1199px){
+    .xs-nav-links {
+        display: none;
+    }
+}
+
+/* xtra-large view */
+@media screen and (min-width:1200px){
+    .xs-nav-links {
+        display: none;
     }
 }
