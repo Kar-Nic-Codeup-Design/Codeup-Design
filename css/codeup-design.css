@@ -13,8 +13,6 @@ body {
     /*font-family: 'Anton', sans-serif;*/
 }
 
-/* --- Everything within the Nav --- */
-
 .navSection {
     height: 100%;
     width: 100%;
@@ -34,6 +32,11 @@ body {
     width: 100%;
 }
 
+.codeup {
+    font-family: 'Abel', sans-serif;
+    font-size: 48px;
+}
+
 #logo {
     height: 200px;
     width: 200px;
@@ -44,11 +47,11 @@ body {
 }
 #visual-design {
     font-size: 48px;
-    margin: 3rem;
+    margin: 1.3rem 3rem 1.7rem 3rem;
     font-family: 'Anton', sans-serif;
     /*position: initial;*/
 }
-.city{
+.city, .circles-xs{
     font-family: 'Anton', sans-serif;
 }
 
@@ -74,8 +77,8 @@ body {
 nav a.nav-link {
     color: black;
     font-family: 'Abel', sans-serif;
-    font-size: 21px;
-    padding: 10px;
+    font-size: 18px;
+    padding-left: 10px;
 }
 
 
@@ -87,10 +90,20 @@ nav a.nav-link {
 
 .circles .btn {
 
-    height: 111px;
-    width: 111px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
     border: 6px solid white;
+}
+
+.btn-group-lg>.btn, .btn-lg{
+    padding: .5rem 0!important;
+}
+
+.circles.designDevelop, .circles.supportHost{
+    display: inline-flex;
+    width: 100%;
+    height: 150px;
 }
 
 a {
@@ -100,6 +113,7 @@ a {
 
 #designButton, #designButton-xs {
     background: #E6563B;
+
 }
 
 #developButton, #developButton-xs {
@@ -128,7 +142,7 @@ a {
     align-items: center;
 }
 
-.imageSize {
+img.imageSize.rounded {
     height: 140px;
     width: 240px;
     border: 6px solid #f0f0f0;
@@ -198,10 +212,6 @@ a {
         margin-right: 21px;
     }
 
-    #visual-design {
-        margin: auto;
-    }
-
     .selectedWorkImagesOnSm {
         display: block;
 
@@ -210,7 +220,8 @@ a {
     .circles {
     }
 
-    #designButton {
+    #designButton-xs {
+
 
     }
 }

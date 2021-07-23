@@ -8,14 +8,14 @@
 
     <!--    Custom CSS below -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" >
     <link rel="stylesheet" href="css/codeup-design.css">
 </head>
 <body>
     <header>
         <nav class="navbar logo-nav-codeup px-0 d-flex flex-column justify-content-center">
 
-            <div class="row bg-light mt-4" style="height: 63px">
+            <div class="row bg-light mt-4" style="height: 60px">
                 <img src="img/logo.png" class="logo xs" alt="logo">
 
    <!--            Navbar list at "small view"                -->
@@ -42,7 +42,7 @@
             </h2>
 
     <!--            Navbar list "xs view"                 -->
-            <div class="xs-nav-links justify-content-center mt-3">
+            <div class="xs-nav-links justify-content-center mb-3">
                 <ul class="nav text-uppercase">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
@@ -66,7 +66,7 @@
         <div class="visualDesign text-uppercase text-center">
             <h1 id="visual-design">Visual Design & Web Development</h1>
         </div>
-        <h4 class="city text-uppercase text-center mt-5">From Park City, Utah</h4>
+        <h3 class="city text-uppercase text-center mt-5">From Park City, Utah</h3>
 <!--<header>-->
 <!--    <nav>-->
 <!--        <div class="navSection">-->
@@ -100,32 +100,34 @@
 
 <!--    <h1 class="container visual-design text-uppercase mt-3 mb-4">Visual Design & Web Development</h1>-->
 
-<!--        <div class="circles text-center m-5">-->
-<!--            <button type="button" class="btn m-2 btn-primary btn-lg text-uppercase font-weight-bold" id="designButton-xs">Design</button>-->
-<!--            <button type="button" class="btn m-2 btn-secondary btn-lg text-uppercase font-weight-bold" id="developButton-xs">Develop</button>-->
-<!--            <button type="button" class="btn m-2 btn-primary btn-lg text-uppercase font-weight-bold" id="supportButton-xs">Support</button>-->
-<!--            <button type="button" class="btn m-2 btn-secondary btn-lg text-uppercase font-weight-bold" id="hostButton-xs">Host</button>-->
-<!--        </div>-->
+            <div class="circles designDevelop">
+                <div class="circles-xs text-center"><button type="button" class="btn m-2 btn-primary btn-lg text-uppercase" id="designButton-xs">Design</button></div>
+                <div class="circles-xs text-center"><button type="button" class="btn m-2 btn-secondary btn-lg text-uppercase" id="developButton-xs">Develop</button></div>
+            </div>
+            <div class="circles supportHost">
+                <div class="circles-xs text-center"><button type="button" class="btn m-2 btn-primary btn-lg text-uppercase" id="supportButton-xs">Support</button></div>
+                <div class="circles-xs text-center"><button type="button" class="btn m-2 btn-secondary btn-lg text-uppercase" id="hostButton-xs">Host</button></div>
+            </div>
 
-<!--        <h6 id="selectedWork-xs" class="text-center text-uppercase mt-5 mb-4"> Selected Work </h6>-->
-<!--        <div class="featured">-->
-<!--            <div class="selectedWorkImagesOnXs mb-5 text-center">-->
-<!--                <img src="img/images/apple-ipad.jpg" alt="apple-ipad" class="imageSize rounded">-->
-<!--                <h6 class="text-uppercase mt-2"> Featured Project <span class="badge badge1 rounded-pill">D</span> <span  class="ml badge badge2 rounded-pill">D</span> <span class="ml badge badge3  rounded-pill">S</span> <span class="ml badge badge4 rounded-pill">H</span></h6>-->
-<!--            </div>-->
-<!--            <div class="selectedWorkImagesOnSm">-->
-<!--                <img src="img/images/macbook.jpg" alt="apple-ipad" class="imageSize rounded">-->
-<!--                <h6 class="text-uppercase mt-2"> Featured Project <span class="badge badge1 rounded-pill">D</span> <span class="ml badge badge2 rounded-pill">D</span> <span class="ml badge badge3 rounded-pill">S</span> <span class="ml badge badge4 rounded-pill">H</span></h6>-->
-<!--            </div>-->
-<!--            <div class="selectedWorkImagesOnSm">-->
-<!--                <img src="img/images/man.jpg" alt="apple-ipad" class="imageSize rounded">-->
-<!--                <h6 class="text-uppercase mt-2"> Featured Project <span class="badge badge1 rounded-pill">D</span> <span class="ml badge badge2 rounded-pill">D</span> <span class="ml badge badge3 rounded-pill">S</span> <span  class="ml badge badge4 rounded-pill">H</span></h6>-->
-<!--            </div>-->
-<!--            <div class="selectedWorkImagesOnSm">-->
-<!--                <img src="img/images/security.jpg" alt="apple-ipad" class="imageSize rounded">-->
-<!--                <h6 class="text-uppercase mt-2"> Featured Project <span class="badge badge1 rounded-pill">D</span> <span class="ml badge badge2 rounded-pill">D</span> <span class="ml badge badge3 rounded-pill">S</span> <span class="ml badge badge4 rounded-pill">H</span></h6>-->
-<!--            </div>-->
-<!--        </div>-->
+        <h6 id="selectedWork-xs" class="text-center text-uppercase mt-5 mb-4"> Selected Work </h6>
+        <div class="featured">
+            <div class="selectedWorkImagesOnXs mb-5 text-center">
+                <img src="img/apple-ipad.jpg" alt="ipad" class="imageSize rounded">
+                <h6 class="text-uppercase mt-2"> Featured Project <span class="badge badge1 rounded-pill">D</span> <span  class="ml badge badge2 rounded-pill">D</span> <span class="ml badge badge3  rounded-pill">S</span> <span class="ml badge badge4 rounded-pill">H</span></h6>
+            </div>
+            <div class="selectedWorkImagesOnXs mb-5 text-center">
+                <img src="img/macbook.jpg" alt="mac" class="imageSize rounded">
+                <h6 class="text-uppercase mt-2"> Featured Project <span class="badge badge1 rounded-pill">D</span> <span class="ml badge badge2 rounded-pill">D</span> <span class="ml badge badge3 rounded-pill">S</span> <span class="ml badge badge4 rounded-pill">H</span></h6>
+            </div>
+            <div class="selectedWorkImagesOnXs mb-5 text-center">
+                <img src="img/man.jpg" alt="man" class="imageSize rounded">
+                <h6 class="text-uppercase mt-2"> Featured Project <span class="badge badge1 rounded-pill">D</span> <span class="ml badge badge2 rounded-pill">D</span> <span class="ml badge badge3 rounded-pill">S</span> <span  class="ml badge badge4 rounded-pill">H</span></h6>
+            </div>
+            <div class="selectedWorkImagesOnXs mb-5 text-center">
+                <img src="img/security.jpg" alt="security" class="imageSize rounded">
+                <h6 class="text-uppercase mt-2"> Featured Project <span class="badge badge1 rounded-pill">D</span> <span class="ml badge badge2 rounded-pill">D</span> <span class="ml badge badge3 rounded-pill">S</span> <span class="ml badge badge4 rounded-pill">H</span></h6>
+            </div>
+        </div>
 <!--    </main>-->
 <!--    <h4 class="city text-uppercase mt-5 mb-4">From Park City, Utah</h4>-->
 
