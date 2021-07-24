@@ -18,7 +18,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 .row.bg-light{
     width: 100%;
@@ -38,8 +38,8 @@ body {
 }
 
 #logo {
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
 }
 .visualDesign {
     width: 100%;
@@ -67,11 +67,10 @@ body {
     margin: 0 auto;
     position: relative;
     bottom: 24px;
-
 }
 
 .nav-link {
-    padding: 0 10px;
+    padding: 10px;
 }
 
 nav a.nav-link {
@@ -143,8 +142,8 @@ a {
 }
 
 img.imageSize.rounded {
-    height: 160px;
-    width: 270px;
+    height: 180px;
+    width: 290px;
     border: 6px solid #dddede;
 }
 h6.text-uppercase.mt-2{
@@ -154,7 +153,7 @@ h6.text-uppercase.mt-2{
 .badge1 {
     margin-left: 30px;
     background: #E6563B;
-    font-size: 19px;
+    /*font-size: 19px;*/
 }
 
 .badge2 {
@@ -190,6 +189,9 @@ h6.text-uppercase.mt-2{
     .sm-nav-links {
         display: none;
     }
+    img.logo.sm {
+        display: none;
+    }
 
     span .codeup {
         display: none;
@@ -204,7 +206,6 @@ h6.text-uppercase.mt-2{
     .sm .services {
         margin-left: 15px;
         margin-right: 18px;
-
     }
 
     .sm .work {
@@ -218,15 +219,12 @@ h6.text-uppercase.mt-2{
 
     .selectedWorkImagesOnSm {
         display: block;
-
     }
 
     .circles {
     }
 
     #designButton-xs {
-
-
     }
 }
 
@@ -235,6 +233,16 @@ h6.text-uppercase.mt-2{
     .xs-nav-links {
         display: none;
     }
+    .nav-link.services{
+        float: left;
+    }
+    img.logo.xs {
+        display: none;
+    }
+    img.logo.sm {
+        display: block;
+    }
+
 
 }
 
