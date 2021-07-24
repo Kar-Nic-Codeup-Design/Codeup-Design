@@ -9,38 +9,57 @@ body {
     /*background: #F0F0F0;*/
     /*margin: 0;*/
     /*padding: 0;*/
-    /*font-family: 'Abel', sans-serif;*/
+    font-family: 'Abel', sans-serif;
     /*font-family: 'Anton', sans-serif;*/
 }
 
-/* --- Everything within the Nav --- */
+/*header{*/
+/*    justify-content: center;*/
+/*}*/
 
 .navSection {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
 }
-
-.white-strip {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    height: 98px;
+.row.bg-light{
     width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding-top: 30px;
+}
+/*.white-strip {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    background: white;*/
+/*    height: 98px;*/
+/*    width: 100%;*/
+/*}*/
+
+.codeup {
+    font-family: 'Abel', sans-serif;
+    font-size: 48px;
 }
 
-#logo {
-    height: 200px;
-    width: 200px;
+/*#logo {*/
+/*    height: 120px;*/
+/*    width: 120px;*/
+/*}*/
+.visualDesign {
+    width: 100%;
+
 }
 #visual-design {
-    font-size: 33px;
-    margin: 1em 3em 0 3em;
+    font-size: 48px;
+    margin: 1.3rem 3rem 1.7rem 3rem;
     font-family: 'Anton', sans-serif;
     /*position: initial;*/
+}
+.city, .circles-xs{
+    font-family: 'Anton', sans-serif;
 }
 
 #selectedWork {
@@ -52,21 +71,32 @@ body {
 .logo{
     height: 105px;
     width: 105px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     position: relative;
-    bottom: 24px;
-
+    bottom: 21px;
 }
-
+img.logo.sm{
+    margin-top: 9px;
+}
+.sm-nav-links.row-left, .sm-nav-links.row-right{
+    margin-top: 21px;
+}
+.sm-nav-links.row-left{
+    padding-right: 6px;
+}
+.sm-nav-links.row-right{
+    padding-left: 9px;
+}
 .nav-link {
-    padding: 0 10px;
+    padding: 10px;
 }
 
 nav a.nav-link {
     color: black;
     font-family: 'Abel', sans-serif;
-    font-size: 21px;
-    padding: 10px;
+    font-size: 18px;
+    padding-left: 12px;
+    padding-right: 6px;
 }
 
 
@@ -77,11 +107,22 @@ nav a.nav-link {
 }
 
 .circles .btn {
-
-    height: 111px;
-    width: 111px;
+    font-size: 30px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     border: 6px solid white;
+}
+
+.btn-group-lg>.btn, .btn-lg{
+    padding: .5rem 0!important;
+
+}
+
+.circles.designDevelop, .circles.supportHost{
+    display: inline-flex;
+    width: 100%;
+    height: 150px;
 }
 
 a {
@@ -89,20 +130,21 @@ a {
     color:black
 }
 
-#designButton {
+#designButton, #designButton-xs {
     background: #E6563B;
+
 }
 
-#developButton {
+#developButton, #developButton-xs {
     background: #EB9D3A;
 }
 
-#supportButton {
+#supportButton, #supportButton-xs {
     background: #7cb06c;
     color: white;
 }
 
-#hostButton {
+#hostButton, #hostButton-xs {
     background: #00aba9;
     color: white;
 }
@@ -113,21 +155,28 @@ a {
 }
 
 .selectedWorkImages {
+    height: 190px;
+    width: 310px;
+    border: 6px solid;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-.imageSize {
-    height: 140px;
-    width: 240px;
-    border: 6px solid #f0f0f0;
+img.imageSize.rounded {
+    height: 210px;
+    width: 300px;
+    border: 6px solid #dddede;
 }
-
+h6.text-uppercase.mt-2{
+    font-family: 'Abel', sans-serif;
+    font-size: 21px;
+}
 .badge1 {
-    margin-left: 36px;
+    margin-left: 30px;
     background: #E6563B;
+    /*font-size: 19px;*/
 }
 
 .badge2 {
@@ -156,14 +205,16 @@ a {
 
       /*"small view"*/
 
-@media screen and (min-width:480px) and (max-width:768px){
+@media screen and (min-width:480px) and (max-width:575px){
 
     /*.xs will show again after 768 at which point the utility below will be copied to the proceeding @media queries*/
-    .xs .nav {
+
+    .sm-nav-links {
         display: none;
     }
-
-
+    img.logo.sm {
+        display: none;
+    }
 
     span .codeup {
         display: none;
@@ -178,7 +229,6 @@ a {
     .sm .services {
         margin-left: 15px;
         margin-right: 18px;
-
     }
 
     .sm .work {
@@ -190,19 +240,55 @@ a {
         margin-right: 21px;
     }
 
-    #visual-design {
-        margin: auto;
-    }
-
     .selectedWorkImagesOnSm {
         display: block;
-
     }
 
     .circles {
     }
 
-    #designButton {
+    #designButton-xs {
+    }
+}
 
+/* small view */
+@media screen and (min-width:576px) and (max-width:767px){
+    .xs-nav-links {
+        display: none;
+    }
+    /*.nav-link.services{*/
+    /*    float: left;*/
+    /*}*/
+    img.logo.xs {
+        display: none;
+    }
+    img.logo.sm {
+        display: inline-block;
+    }
+    a.nav-link {
+        padding: 6px 3px;
+    }
+
+
+}
+
+/* medium view */
+@media screen and (min-width:768px) and (max-width:991px){
+    .xs-nav-links {
+        display: none;
+    }
+}
+
+/* large view */
+@media screen and (min-width:992px) and (max-width:1199px){
+    .xs-nav-links {
+        display: none;
+    }
+}
+
+/* xtra-large view */
+@media screen and (min-width:1200px){
+    .xs-nav-links {
+        display: none;
     }
 }
