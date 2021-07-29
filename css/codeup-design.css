@@ -225,6 +225,32 @@ h6.text-uppercase.mt-2{
 /*    display: none;*/
 /*}*/
 
+/*.badge1 {*/
+/*    margin-left: 30px;*/
+/*    background: #E6563B;*/
+/*    !*font-size: 19px;*!*/
+/*}*/
+
+/*.badge2 {*/
+/*    background: #dea03d;*/
+/*}*/
+
+/*.badge3 {*/
+/*    background: #7cb06c;*/
+/*}*/
+
+/*.badge4 {*/
+/*    background: #00aba9;*/
+/*}*/
+
+/*.badge {*/
+/*    border-radius: 50%;*/
+/*}*/
+
+/*.sm {*/
+/*    display: none;*/
+/*}*/
+
 .selectedWorkImagesOnSm {
     display: none;
 }
